@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     },
 });
 
-export default function WelcomePage ({navigation}) {
+export default function WaterQuestion1Page ({navigation}) {
     const [text, onChangeText] = React.useState('15 mins')
     return (
         <View style = {styles.container}>
