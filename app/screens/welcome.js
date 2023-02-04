@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 
     title: {
         color: '#97C23C',
-        fontSize: 110,
+        fontSize: 100,
         textAlign: 'center',
     },
 
