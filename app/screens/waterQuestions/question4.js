@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
@@ -8,8 +8,13 @@ const styles = StyleSheet.create({
     },
 });
 
-export default function question4() {
-  return (
-    <div>question4</div>
-  )
+export default function WaterQuestion1Page ({navigation}) {
+    const [text, onChangeText] = React.useState('Enter')
+    return (
+        <View style = {styles.container}>
+            <Text> How long did you shower today? </Text>
+            <TextInput onChangeText = {onChangeText} value = {text}/> 
+        </View>
+    )
 }
+

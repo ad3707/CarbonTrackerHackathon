@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
@@ -11,6 +11,6 @@ const styles = StyleSheet.create({
 
 export default function question1W() {
   return (
-    <div>question1W</div>
+    <View>question1W</View>
   )
 }
