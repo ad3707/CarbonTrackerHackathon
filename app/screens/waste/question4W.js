@@ -8,8 +8,9 @@ const styles = StyleSheet.create({
     },
 });
 
-export default function question4T() {
+
+export default function question4W() {
   return (
-    <div>question4T</div>
+    <div>question4W</div>
   )
 }
