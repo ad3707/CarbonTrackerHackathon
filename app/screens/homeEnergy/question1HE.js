@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'reac
 
 const styles = require('../style.js');
 
-export default function WaterQ1 ({navigation}) {
+export default function HomeEnergyQ1 ({navigation}) {
     const [text, onChangeText] = React.useState('Enter')
     return (
         <View style = {styles.container}>
