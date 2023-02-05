@@ -48,18 +48,33 @@ export default function WaterQ1 ({navigation}) {
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
-                <Text style = {styles.quesText}> How long did you shower today? </Text>
+                <Text style = {styles.quesText}> How did you travel today? </Text>
             </View>
 
             <View style = {styles.inputContainer}>
                 <TouchableOpacity 
                     style = {styles.button}>
-                    <Text style = {styles.btnText}> Yes </Text>
+                    <Text style = {styles.btnText}> Public Transport </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
                     style = {styles.button}>
-                    <Text style = {styles.btnText}> No </Text>
+                    <Text style = {styles.btnText}> Walk/Bike </Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity 
+                    style = {styles.button}>
+                    <Text style = {styles.btnText}> Car </Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity 
+                    style = {styles.button}>
+                    <Text style = {styles.btnText}> Bus </Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity 
+                    style = {styles.button}>
+                    <Text style = {styles.btnText}> Metro/Train </Text>
                 </TouchableOpacity>
             </View>
         </View>

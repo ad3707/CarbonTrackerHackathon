@@ -48,18 +48,23 @@ export default function WaterQ1 ({navigation}) {
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
-                <Text style = {styles.quesText}> How long did you shower today? </Text>
+                <Text style = {styles.quesText}> How many miles did you drive today? </Text>
             </View>
 
             <View style = {styles.inputContainer}>
                 <TouchableOpacity 
                     style = {styles.button}>
-                    <Text style = {styles.btnText}> Yes </Text>
+                    <Text style = {styles.btnText}> {'< 25'} </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
                     style = {styles.button}>
-                    <Text style = {styles.btnText}> No </Text>
+                    <Text style = {styles.btnText}> 25 - 50 </Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity 
+                    style = {styles.button}>
+                    <Text style = {styles.btnText}> {'> 50'} </Text>
                 </TouchableOpacity>
             </View>
         </View>

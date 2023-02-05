@@ -73,12 +73,22 @@ export default function WaterQ1 ({navigation}) {
             <View style = {styles.inputContainer}>
                 <TouchableOpacity 
                     style = {styles.button}>
-                    <Text style = {styles.btnText}> Yes </Text>
+                    <Text style = {styles.btnText}> 5 min</Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity 
+                    style = {styles.button}>
+                    <Text style = {styles.btnText}> 10 min</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
                     style = {styles.button}>
-                    <Text style = {styles.btnText}> No </Text>
+                    <Text style = {styles.btnText}> 15 min</Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity 
+                    style = {styles.button}>
+                    <Text style = {styles.btnText}> 20 min or more </Text>
                 </TouchableOpacity>
             </View>
 

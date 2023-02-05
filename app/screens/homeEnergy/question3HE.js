@@ -48,13 +48,23 @@ export default function WaterQ1 ({navigation}) {
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
-                <Text style = {styles.quesText}> How long did you shower today? </Text>
+                <Text style = {styles.quesText}> Did you use your clothes dryer today? </Text>
             </View>
 
             <View style = {styles.inputContainer}>
                 <TouchableOpacity 
                     style = {styles.button}>
-                    <Text style = {styles.btnText}> Yes </Text>
+                    <Text style = {styles.btnText}> Yes, Many Loads </Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity 
+                    style = {styles.button}>
+                    <Text style = {styles.btnText}> Yes, 1 Full Load </Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity 
+                    style = {styles.button}>
+                    <Text style = {styles.btnText}> Yes, 1 Not Full Load </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 

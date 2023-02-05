@@ -21,6 +21,7 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
+<<<<<<< Updated upstream
     <NavigationContainer>   
       <Stack.Navigator initialRouteName = "WaterQ1">
         <Stack.Screen name = "Welcome" component = {WelcomePage} />
@@ -34,6 +35,19 @@ export default function App() {
         <Stack.Screen name = "WasteQ4" component = {WasteQ4} />
         <Stack.Screen name = "SignUp" component = {SignUpPage} />
         <Stack.Screen name = "Profile" component = {ProfilePage} />
+=======
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName = "Water Question 1">
+        <Stack.Screen name = "Welcome" component = {WelcomePage} />
+        <Stack.Screen name = "Water Question 1" component = {WaterQ1} />
+        <Stack.Screen name = "Water Question 2" component = {WaterQ2} />
+        <Stack.Screen name = "Water Question 3" component = {WaterQ3} />
+        <Stack.Screen name = "Water Question 4" component = {WaterQ4} />
+        <Stack.Screen name = "Waste Question 1" component = {WasteQ1} />
+        <Stack.Screen name = "Waste Question 2" component = {WasteQ2} />
+        <Stack.Screen name = "Waste Question 3" component = {WasteQ3} />
+        <Stack.Screen name = "Waste Question 4" component = {WasteQ4} />
+>>>>>>> Stashed changes
       </Stack.Navigator>
     </NavigationContainer>
   );

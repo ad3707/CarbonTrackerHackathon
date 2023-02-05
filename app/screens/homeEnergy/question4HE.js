@@ -48,7 +48,7 @@ export default function WaterQ1 ({navigation}) {
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
-                <Text style = {styles.quesText}> How long did you shower today? </Text>
+                <Text style = {styles.quesText}> Do you leave the lights on when you leave the room? </Text>
             </View>
 
             <View style = {styles.inputContainer}>
