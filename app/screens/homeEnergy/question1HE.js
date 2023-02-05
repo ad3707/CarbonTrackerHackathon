@@ -3,8 +3,9 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'reac
 
 const styles = require('../style.js');
 
-export default function HomeEnergyQ1 ({navigation}) {
-    const [text, onChangeText] = React.useState('Enter')
+export default function HomeEnergyQ1 ({route,navigation}) {
+    const [carbon , setCarbon] = React.useState(route.params.paramKey);
+
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
@@ -13,16 +14,19 @@ export default function HomeEnergyQ1 ({navigation}) {
 
             <View style = {styles.inputMultiContainer}>
                 <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 4)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Many Loads </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 2)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> 1 Full Load </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 1)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Partial Load </Text>
                 </TouchableOpacity>
@@ -36,7 +40,8 @@ export default function HomeEnergyQ1 ({navigation}) {
             <View style = {styles.nextContainer}>
                 <TouchableOpacity 
                     style = {styles.nextBtn}
-                    onPress= {() => navigation.navigate("Home Energy Question 2")}>
+                    onPress= {() => navigation.navigate("Home Energy Question 2",{
+                      paramKey: carbon})}>
                         <Text style = {styles.nextBtnText}> {'->'} </Text>
                     </TouchableOpacity>
             </View>

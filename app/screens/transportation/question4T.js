@@ -3,8 +3,9 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'reac
 
 const styles = require('../style.js');
 
-export default function TransportationQ4 ({navigation}) {
-    const [text, onChangeText] = React.useState('Enter')
+export default function TransportationQ4 ({route,navigation}) {
+    const [carbon , setCarbon] = React.useState(route.params.paramKey);
+
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
@@ -18,6 +19,7 @@ export default function TransportationQ4 ({navigation}) {
                 </TouchableOpacity>
 
                 <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 2)}
                     style = {styles.button}>
                     <Text style = {styles.btnText}> No </Text>
                 </TouchableOpacity>
@@ -26,7 +28,8 @@ export default function TransportationQ4 ({navigation}) {
             <View style = {styles.nextContainer}>
                 <TouchableOpacity 
                     style = {styles.nextBtn}
-                    onPress= {() => navigation.navigate("StartTracking")}>
+                    onPress= {() => navigation.navigate("DisplayPage",{
+                        paramKey: carbon})}>
                         <Text style = {styles.nextBtnText}> {'->'} </Text>
                     </TouchableOpacity>
             </View>

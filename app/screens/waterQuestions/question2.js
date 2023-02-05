@@ -9,7 +9,6 @@ export default function WaterQ2 ({route,navigation}) {
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
                 <Text style = {styles.quesText}> Did you take a bath today? </Text>
-                <Text> {carbon} </Text>
             </View>
 
             <View style = {styles.inputContainer}>

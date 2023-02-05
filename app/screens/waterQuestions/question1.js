@@ -9,16 +9,14 @@ export default function WaterQ1 ({route,navigation}) {
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
                 <Text style = {styles.quesText}> How long did you shower today? </Text>
-                <Text> {carbon} </Text>
             </View>
-
 
             <View style = {styles.inputMultiContainer}>
                 <TouchableOpacity 
                     onPress= {() => setCarbon(carbon + 1)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> 5 mins </Text>
-                    
+                
                 </TouchableOpacity>
 
                 

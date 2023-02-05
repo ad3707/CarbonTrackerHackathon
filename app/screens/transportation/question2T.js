@@ -3,7 +3,9 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'reac
 
 const styles = require('../style.js');
 
-export default function TransportationQ2 ({navigation}) {
+export default function TransportationQ2 ({route,navigation}) {
+    const [carbon , setCarbon] = React.useState(route.params.paramKey);
+
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
@@ -13,15 +15,23 @@ export default function TransportationQ2 ({navigation}) {
             <View style = {styles.inputMultiContainer}>
                 <TouchableOpacity 
                     style = {styles.buttonMulti}>
-                    <Text style = {styles.btnText}> {'< 25'} </Text>
+                    <Text style = {styles.btnText}> 0 </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 1)}
+                    style = {styles.buttonMulti}>
+                    <Text style = {styles.btnText}> 1 - 24 </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 4)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> 25 - 50 </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 10)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> {'> 50'} </Text>
                 </TouchableOpacity>
@@ -30,7 +40,8 @@ export default function TransportationQ2 ({navigation}) {
             <View style = {styles.nextContainer}>
                 <TouchableOpacity 
                     style = {styles.nextBtn}
-                    onPress= {() => navigation.navigate("Transportation Question 3")}>
+                    onPress= {() => navigation.navigate("Transportation Question 3",{
+                        paramKey: carbon})}>
                         <Text style = {styles.nextBtnText}> {'->'} </Text>
                     </TouchableOpacity>
             </View>

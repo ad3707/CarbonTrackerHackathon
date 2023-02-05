@@ -4,8 +4,9 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'reac
 const styles = require('../style.js');
 
 
-export default function TransportationQ1 ({navigation}) {
-    const [text, onChangeText] = React.useState('Enter')
+export default function TransportationQ1 ({route,navigation}) {
+    const [carbon , setCarbon] = React.useState(route.params.paramKey);
+
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
@@ -19,16 +20,19 @@ export default function TransportationQ1 ({navigation}) {
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 10)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Car </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 2)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Bus </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
+                    onPress= {() => setCarbon(carbon + 2)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Metro/Train </Text>
                 </TouchableOpacity>
@@ -37,7 +41,8 @@ export default function TransportationQ1 ({navigation}) {
             <View style = {styles.nextContainer}>
                 <TouchableOpacity 
                     style = {styles.nextBtn}
-                    onPress= {() => navigation.navigate("Transportation Question 2")}>
+                    onPress= {() => navigation.navigate("Transportation Question 2",{
+                        paramKey: carbon})}>
                         <Text style = {styles.nextBtnText}> {'->'} </Text>
                     </TouchableOpacity>
             </View>

@@ -11,7 +11,6 @@ export default function WaterQ4 ({route, navigation}) {
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
                 <Text style = {styles.quesText}> Did you turn off the water when washing your face? </Text>
-                <Text> {carbon} </Text>
             </View>
 
             <View style = {styles.inputContainer}>

@@ -10,7 +10,6 @@ export default function WaterQ3 ({route,navigation}) {
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
                 <Text style = {styles.quesText}> Did you turn off the water when brushing your teeth? </Text>
-                <Text> {carbon} </Text>
             </View>
 
             <View style = {styles.inputContainer}>
