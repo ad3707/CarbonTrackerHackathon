@@ -1,71 +1,8 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#95CFFD',
-    },
+const styles = require('../style.js');
 
-    quesText: {
-        fontSize: 30,
-        fontWeight: 'bold',
-    },
-
-    quesContainer: {
-        flex: 1,
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        marginTop: 50,
-    },
-
-    inputContainer: {
-        flex: 2,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-
-    btnText: {
-        fontSize: 25,
-        color: 'white',
-    },
-
-    button: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 10,
-        backgroundColor: '#2377B9',
-        width: 100,
-        height: 50,
-        marginRight: 40,
-        marginLeft: 40,
-    },
-    nextBtn: {
-        borderRadius: 50, 
-        backgroundColor: 'white',
-    },
-
-    nextBtn: {
-        borderRadius: 50, 
-        backgroundColor: '#2C7EF1',
-        width: 50,
-        height: 50,
-    },
-    nextContainer: {
-        flex: 3,
-        alignItems: 'flex-end',
-        marginRight: 20,
-    },
-
-    nextBtnText: {
-        marginLeft: 9,
-        marginTop: 10,
-        fontSize: 25,
-        fontWeight: 'bold',
-        color: 'white',
-    }
-});
 
 export default function WaterQ3 ({navigation}) {
     const [text, onChangeText] = React.useState('Enter')
