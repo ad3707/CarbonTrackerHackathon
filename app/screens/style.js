@@ -39,6 +39,7 @@ module.exports = StyleSheet.create({
     btnText: {
         fontSize: 25,
         color: 'white',
+        fontFamily: 'Avenir-Roman',
     },
 
     button: {

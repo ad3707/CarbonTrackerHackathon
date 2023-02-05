@@ -21,13 +21,14 @@ const styles = StyleSheet.create({
     },
 
     inputText: {
-        fontSize: 20,
+        fontSize: 15,
         color: 'black',
         borderRadius: 5,
         backgroundColor: 'white',
         width: 250,
         height: 50,
         marginBottom: 30,
+        fontFamily: 'Avenir-Roman',
     },
     button: {
         justifyContent: 'center',
@@ -43,6 +44,8 @@ const styles = StyleSheet.create({
     btnText: {
         fontSize: 20,
         color: 'black',
+        fontWeight: 'bold',
+        fontFamily: 'Avenir-Roman',
     },
 });
 
