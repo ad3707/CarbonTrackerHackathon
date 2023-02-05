@@ -32,24 +32,24 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName = "Home Energy Question 1">
+      <Stack.Navigator initialRouteName = "Welcome">
         <Stack.Screen name = "Welcome" component = {WelcomePage} options={{headerShown: false}}/>
-        <Stack.Screen name = "Water Question 1" component = {WaterQ1} />
-        <Stack.Screen name = "Water Question 2" component = {WaterQ2} />
-        <Stack.Screen name = "Water Question 3" component = {WaterQ3} />
-        <Stack.Screen name = "Water Question 4" component = {WaterQ4} />
-        <Stack.Screen name = "Waste Question 1" component = {WasteQ1} />
-        <Stack.Screen name = "Waste Question 2" component = {WasteQ2} />
-        <Stack.Screen name = "Waste Question 4" component = {WasteQ4} />
-        <Stack.Screen name = "Waste Question 3" component = {WasteQ3} />
+        <Stack.Screen name = "Water Question 1" component = {WaterQ1} options={{headerShown: false}}/>
+        <Stack.Screen name = "Water Question 2" component = {WaterQ2} options={{headerShown: false}} />
+        <Stack.Screen name = "Water Question 3" component = {WaterQ3} options={{headerShown: false}}/>
+        <Stack.Screen name = "Water Question 4" component = {WaterQ4} options={{headerShown: false}}/>
+        <Stack.Screen name = "Waste Question 1" component = {WasteQ1} options={{headerShown: false}}/>
+        <Stack.Screen name = "Waste Question 2" component = {WasteQ2} options={{headerShown: false}}/>
+        <Stack.Screen name = "Waste Question 4" component = {WasteQ4} options={{headerShown: false}}/>
+        <Stack.Screen name = "Waste Question 3" component = {WasteQ3} options={{headerShown: false}}/>
         <Stack.Screen name = "Home Energy Question 1" component = {HomeEnergyQ1} options={{headerShown: false}}/>
         <Stack.Screen name = "Home Energy Question 2" component = {HomeEnergyQ2} options={{headerShown: false}} />
         <Stack.Screen name = "Home Energy Question 3" component = {HomeEnergyQ3} options={{headerShown: false}} />
         <Stack.Screen name = "Home Energy Question 4" component = {HomeEnergyQ4} options={{headerShown: false}} />
-        <Stack.Screen name = "Transportation Question 1" component = {TransportationQ1} />
-        <Stack.Screen name = "Transportation Question 2" component = {TransportationQ2} />
-        <Stack.Screen name = "Transportation Question 3" component = {TransportationQ3} />
-        <Stack.Screen name = "Transportation Question 4" component = {TransportationQ4} />
+        <Stack.Screen name = "Transportation Question 1" component = {TransportationQ1} options={{headerShown: false}}/>
+        <Stack.Screen name = "Transportation Question 2" component = {TransportationQ2} options={{headerShown: false}}/>
+        <Stack.Screen name = "Transportation Question 3" component = {TransportationQ3} options={{headerShown: false}}/>
+        <Stack.Screen name = "Transportation Question 4" component = {TransportationQ4} options={{headerShown: false}}/>
         <Stack.Screen name = "SignUp" component = {SignUpPage} options={{headerShown: false}} />
         <Stack.Screen name = "Profile" component = {ProfilePage} options={{headerShown: false}}/>
       </Stack.Navigator>

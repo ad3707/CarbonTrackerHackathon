@@ -4,26 +4,29 @@ import { StyleSheet } from 'react-native';
 module.exports = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#95CFFD',
+        backgroundColor: '#3489FE',
     },
 
     quesText: {
         fontSize: 30,
         fontWeight: 'bold',
+        fontFamily: 'Avenir-Roman',
+        textAlign: 'center',
     },
 
     quesContainer: {
-        flex: 1,
+        flex: 2,
         justifyContent: 'flex-start',
         alignItems: 'center',
-        marginTop: 50,
+        marginTop: 100,
+        marginRight: 10,
     },
 
     inputContainer: {
         flex: 2,
         flexDirection: 'row',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'flex-start',
     },
 
     inputMultiContainer: {
@@ -42,7 +45,7 @@ module.exports = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10,
-        backgroundColor: '#2377B9',
+        backgroundColor: '#F9912C',
         width: 100,
         height: 50,
         marginRight: 40,
@@ -53,7 +56,7 @@ module.exports = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10,
-        backgroundColor: '#2377B9',
+        backgroundColor: '#F9912C',
         width: 220,
         height: 50,
         marginRight: 40,
@@ -62,7 +65,7 @@ module.exports = StyleSheet.create({
     },
     nextBtn: {
         borderRadius: 50, 
-        backgroundColor: '#2C7EF1',
+        backgroundColor: '#000000',
         width: 50,
         height: 50,
     },
@@ -73,9 +76,9 @@ module.exports = StyleSheet.create({
     },
 
     nextBtnText: {
-        marginLeft: 9,
-        marginTop: 10,
-        fontSize: 25,
+        marginLeft: 4,
+        marginTop: 9,
+        fontSize: 28,
         fontWeight: 'bold',
         color: 'white',
     }

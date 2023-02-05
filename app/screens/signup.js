@@ -4,44 +4,66 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'reac
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: '#3489FE',
     },
 
-    titleContainer: {
-        flex: 3,
+    inputContainer: {
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
     },
 
-    blurbContainer: {
-        flex: 2,
+    btnContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        flexDirection: 'row',
+    },
+
+    inputText: {
+        fontSize: 20,
+        color: 'black',
+        borderRadius: 5,
+        backgroundColor: 'white',
+        width: 250,
+        height: 50,
+        marginBottom: 30,
+    },
+    button: {
         justifyContent: 'center',
         alignItems: 'center',
+        borderRadius: 10,
+        backgroundColor: '#F9912C',
+        width: 120,
+        height: 50,
+        marginRight: 40,
+        marginLeft: 40,
     },
 
-    title: {
-        color: '#97C23C',
-        fontSize: 100,
-        textAlign: 'center',
+    btnText: {
+        fontSize: 20,
+        color: 'black',
     },
-
-    blurbText: {
-        fontSize: 30,
-        color: 'white',
-    }
 });
 
 export default function SignUpPage ({navigation}) {
     return (
         <View style = {styles.container}>
-            <View style = {styles.titleContainer}>
-                <Text style = {styles.title}>Sign Up / In </Text>
+            <View style = {styles.inputContainer}>
+                <TextInput style = {styles.inputText}> Email </TextInput>
+                <TextInput style = {styles.inputText}> Password </TextInput>
             </View>
-            <View style = {styles.blurbContainer}>
-                <TextInput style = {styles.blurbText}> Email Address: </TextInput>
-                <TextInput style = {styles.blurbText}> Username: </TextInput>
-                <TextInput style = {styles.blurbText}> Password: </TextInput>
-                <TextInput style = {styles.blurbText}> Retype Password: </TextInput>
+
+            <View style = {styles.btnContainer}>
+                <TouchableOpacity 
+                        style = {styles.button}>
+                        <Text style = {styles.btnText}> Sign Up </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                        style = {styles.button}>
+                        <Text style = {styles.btnText}> Login </Text>
+                </TouchableOpacity>
             </View>
         </View>
     )

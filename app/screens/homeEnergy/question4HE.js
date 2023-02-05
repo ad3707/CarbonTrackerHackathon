@@ -8,7 +8,7 @@ export default function HomeEnergyQ4 ({navigation}) {
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
-                <Text style = {styles.quesText}> Do you leave the lights on when you leave the room? </Text>
+                <Text style = {styles.quesText}> Did you leave the lights on when you left the room? </Text>
             </View>
 
             <View style = {styles.inputContainer}>
