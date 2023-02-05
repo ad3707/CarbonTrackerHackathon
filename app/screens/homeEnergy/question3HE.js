@@ -3,7 +3,6 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'reac
 
 const styles = require('../style.js');
 
-
 export default function HomeEnergyQ3 ({navigation}) {
     const [text, onChangeText] = React.useState('Enter')
     return (
@@ -37,7 +36,7 @@ export default function HomeEnergyQ3 ({navigation}) {
             <View style = {styles.nextContainer}>
                 <TouchableOpacity 
                     style = {styles.nextBtn}
-                    onPress= {() => navigation.navigate("WasteQ4")}>
+                    onPress= {() => navigation.navigate("Home Energy Question 4")}>
                         <Text style = {styles.nextBtnText}> {'->'} </Text>
                     </TouchableOpacity>
             </View>

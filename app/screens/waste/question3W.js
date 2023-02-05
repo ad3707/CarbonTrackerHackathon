@@ -26,7 +26,7 @@ export default function WasteQ3 ({navigation}) {
             <View style = {styles.nextContainer}>
                 <TouchableOpacity 
                     style = {styles.nextBtn}
-                    onPress= {() => navigation.navigate("WasteQ4")}>
+                    onPress= {() => navigation.navigate("Waste Question 4")}>
                         <Text style = {styles.nextBtnText}> {'->'} </Text>
                     </TouchableOpacity>
             </View>

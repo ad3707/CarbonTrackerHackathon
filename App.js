@@ -32,7 +32,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName = "Water Question 1">
+      <Stack.Navigator initialRouteName = "Home Energy Question 1">
         <Stack.Screen name = "Welcome" component = {WelcomePage} />
         <Stack.Screen name = "Water Question 1" component = {WaterQ1} />
         <Stack.Screen name = "Water Question 2" component = {WaterQ2} />
@@ -41,8 +41,6 @@ export default function App() {
         <Stack.Screen name = "Waste Question 1" component = {WasteQ1} />
         <Stack.Screen name = "Waste Question 2" component = {WasteQ2} />
         <Stack.Screen name = "Waste Question 4" component = {WasteQ4} />
-<<<<<<< HEAD
-=======
         <Stack.Screen name = "Waste Question 3" component = {WasteQ3} />
         <Stack.Screen name = "Home Energy Question 1" component = {HomeEnergyQ1} />
         <Stack.Screen name = "Home Energy Question 2" component = {HomeEnergyQ2} />
@@ -54,7 +52,6 @@ export default function App() {
         <Stack.Screen name = "Transportation Question 4" component = {TransportationQ4} />
         <Stack.Screen name = "SignUp" component = {SignUpPage} />
         <Stack.Screen name = "Profile" component = {ProfilePage} />
->>>>>>> 6881f9a8dc7fa49671a9bd5b8af530b1bc56539f
       </Stack.Navigator>
     </NavigationContainer>
   );
