@@ -12,29 +12,24 @@ export default function TransportationQ1 ({navigation}) {
                 <Text style = {styles.quesText}> How did you travel today? </Text>
             </View>
 
-            <View style = {styles.inputContainer}>
+            <View style = {styles.inputMultiContainer}>
                 <TouchableOpacity 
-                    style = {styles.button}>
-                    <Text style = {styles.btnText}> Public Transport </Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Walk/Bike </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Car </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Bus </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Metro/Train </Text>
                 </TouchableOpacity>
             </View>

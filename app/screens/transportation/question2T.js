@@ -4,26 +4,25 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'reac
 const styles = require('../style.js');
 
 export default function TransportationQ2 ({navigation}) {
-    const [text, onChangeText] = React.useState('Enter')
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
                 <Text style = {styles.quesText}> How many miles did you drive today? </Text>
             </View>
 
-            <View style = {styles.inputContainer}>
+            <View style = {styles.inputMultiContainer}>
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> {'< 25'} </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> 25 - 50 </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> {'> 50'} </Text>
                 </TouchableOpacity>
             </View>

@@ -26,7 +26,7 @@ export default function WasteQ4 ({navigation}) {
             <View style = {styles.nextContainer}>
                 <TouchableOpacity 
                     style = {styles.nextBtn}
-                    onPress= {() => navigation.navigate("Waste Question 4")}>
+                    onPress= {() => navigation.navigate("StartTracking")}>
                         <Text style = {styles.nextBtnText}> {'->'} </Text>
                     </TouchableOpacity>
             </View>

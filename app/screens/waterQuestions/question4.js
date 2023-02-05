@@ -27,7 +27,7 @@ export default function WaterQ4 ({navigation}) {
             <View style = {styles.nextContainer}>
                 <TouchableOpacity 
                     style = {styles.nextBtn}
-                    onPress= {() => navigation.navigate("Water Question 4")}>
+                    onPress= {() => navigation.navigate("StartTracking")}>
                         <Text style = {styles.nextBtnText}> {'->'} </Text>
                     </TouchableOpacity>
             </View>

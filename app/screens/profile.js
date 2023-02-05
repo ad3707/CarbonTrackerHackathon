@@ -20,6 +20,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
+    startContainer: {
+        flex: 1,
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+    },
+
     title: {
         color: '#F9912C',
         fontSize: 50,
@@ -32,7 +38,24 @@ const styles = StyleSheet.create({
         fontSize: 25,
         color: 'black',
         fontFamily: 'Avenir-Roman',
-    }
+    },
+    btnText: {
+        fontSize: 25,
+        color: 'white',
+        fontFamily: 'Avenir-Roman',
+    },
+
+    button: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+        backgroundColor: '#F9912C',
+        width: 200,
+        height: 50,
+        marginRight: 40,
+        marginLeft: 40,
+    },
+
 });
 
 export default function ProfilePage ({navigation}) {
@@ -43,6 +66,14 @@ export default function ProfilePage ({navigation}) {
             </View>
             <View style = {styles.infoContainer}>
                 <Text style = {styles.emailText}>Email: {auth.currentUser?.email} </Text>
+            </View>
+
+            <View style = {styles.startContainer}>
+                <TouchableOpacity 
+                    style = {styles.button}
+                    onPress= {() => navigation.navigate("StartTracking")}>
+                        <Text style = {styles.btnText}> Start Tracking </Text>
+                    </TouchableOpacity>
             </View>
         </View>
     )

@@ -30,7 +30,7 @@ module.exports = StyleSheet.create({
     },
 
     inputMultiContainer: {
-        flex: 2,
+        flex: 3,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
@@ -71,8 +71,9 @@ module.exports = StyleSheet.create({
         height: 50,
     },
     nextContainer: {
-        flex: 3,
+        flex: 2,
         alignItems: 'flex-end',
+        justifyContent: 'center',
         marginRight: 20,
     },
 
@@ -82,5 +83,11 @@ module.exports = StyleSheet.create({
         fontSize: 28,
         fontWeight: 'bold',
         color: 'white',
-    }
+    },
+
+    img: {
+        width: 70,
+        height: 70,
+        marginBottom: 30,
+    },
 });

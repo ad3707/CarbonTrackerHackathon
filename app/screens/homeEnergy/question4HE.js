@@ -26,7 +26,7 @@ export default function HomeEnergyQ4 ({navigation}) {
             <View style = {styles.nextContainer}>
                 <TouchableOpacity 
                     style = {styles.nextBtn}
-                    onPress= {() => navigation.navigate("Home Energy Question 4")}>
+                    onPress= {() => navigation.navigate("StartTracking")}>
                         <Text style = {styles.nextBtnText}> {'->'} </Text>
                     </TouchableOpacity>
             </View>
