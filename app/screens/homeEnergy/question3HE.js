@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     }
 });
 
-export default function WaterQ1 ({navigation}) {
+export default function HomeEnergyQ3 ({navigation}) {
     const [text, onChangeText] = React.useState('Enter')
     return (
         <View style = {styles.container}>
