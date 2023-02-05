@@ -19,19 +19,19 @@ export default function TransportationQ2 ({route,navigation}) {
                 </TouchableOpacity>
 
                 <TouchableOpacity 
-                    onPress= {() => setCarbon(carbon + 1)}
+                    onPress= {() => setCarbon(carbon + 264)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> 1 - 24 </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
-                    onPress= {() => setCarbon(carbon + 4)}
+                    onPress= {() => setCarbon(carbon + 814)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> 25 - 50 </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    onPress= {() => setCarbon(carbon + 10)}
+                    onPress= {() => setCarbon(carbon + 1100)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> {'> 50'} </Text>
                 </TouchableOpacity>

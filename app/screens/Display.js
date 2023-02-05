@@ -1,6 +1,9 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
 import { auth } from '../../firebase';
+import {BarChart} from 'react-native-chart-kit';
+import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph';
+
 
 const styles = StyleSheet.create({
     container: {
@@ -24,6 +27,7 @@ const styles = StyleSheet.create({
         fontSize: 38,
         color: 'black',
         fontFamily: 'Avenir-Roman',
+        textAlign: 'center',
     },
     btnText: {
         fontSize: 25,
@@ -41,16 +45,48 @@ const styles = StyleSheet.create({
         marginRight: 40,
         marginLeft: 40,
     },
+    chart: {
+        marginBottom: 40,
+        padding: 10,
+        paddingTop: 20,
+        borderRadius: 10,
+        backgroundColor: '#DADADA',
+        width: 370,
+      },
+      graphContainer: {
+        justifyContent: 'center',
+      }
 });
 
 export default function ProfilePage ({route, navigation}) {
     const [carbon , setCarbon] = React.useState(route.params.paramKey);
+    const config = {
+        hasXAxisBackgroundLines: false,
+        xAxisLabelStyle: {
+          position: 'left',
+          prefix: 'lbs '
+        }
+      };
+      
 
     return (
         <View style = {styles.container}>
             <View style = {styles.infoContainer}>
                 <Text style = {styles.displayText}> Carbon Emissions: {carbon} </Text>
             </View>
+
+        <View style = {styles.graphContainer}>
+          <VerticalBarGraph
+            data={[carbon, 400, 43]}
+            labels={['You', 'Average', 'Ideal']}
+            width={350}
+            height={270}
+            barRadius={5}
+            barWidthPercentage={0.5}
+            baseConfig={config}
+            style={styles.chart}
+          />
+        </View>
 
             <View style = {styles.startContainer}>
                 <TouchableOpacity 

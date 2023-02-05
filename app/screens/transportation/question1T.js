@@ -20,7 +20,7 @@ export default function TransportationQ1 ({route,navigation}) {
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    onPress= {() => setCarbon(carbon + 10)}
+                    onPress= {() => setCarbon(carbon + 22)}
                     style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Car </Text>
                 </TouchableOpacity>
