@@ -31,17 +31,15 @@ const styles = StyleSheet.create({
     }
 });
 
-export default function SignUpPage ({navigation}) {
+export default function ProfilePage ({navigation}) {
     return (
         <View style = {styles.container}>
             <View style = {styles.titleContainer}>
-                <Text style = {styles.title}>Sign Up / In </Text>
+                <Text style = {styles.title}>Profile</Text>
             </View>
             <View style = {styles.blurbContainer}>
-                <TextInput style = {styles.blurbText}> Email Address: </TextInput>
-                <TextInput style = {styles.blurbText}> Username: </TextInput>
-                <TextInput style = {styles.blurbText}> Password: </TextInput>
-                <TextInput style = {styles.blurbText}> Retype Password: </TextInput>
+                <Text style = {styles.blurbText}> Email: user@email.com </Text>
+                <Text style = {styles.blurbText}> Username: bestuserever </Text>
             </View>
         </View>
     )
