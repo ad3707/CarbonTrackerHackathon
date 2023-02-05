@@ -11,25 +11,25 @@ export default function WaterQ1 ({navigation}) {
                 <Text style = {styles.quesText}> How long did you shower today? </Text>
             </View>
 
-            <View style = {styles.inputContainer}>
+            <View style = {styles.inputMultiContainer}>
                 <TouchableOpacity 
-                    style = {styles.button}>
-                    <Text style = {styles.btnText}> 5 min</Text>
+                    style = {styles.buttonMulti}>
+                    <Text style = {styles.btnText}> 5 mins </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    style = {styles.button}>
-                    <Text style = {styles.btnText}> 10 min</Text>
+                    style = {styles.buttonMulti}>
+                    <Text style = {styles.btnText}> 10 mins </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
-                    style = {styles.button}>
-                    <Text style = {styles.btnText}> 15 min</Text>
+                    style = {styles.buttonMulti}>
+                    <Text style = {styles.btnText}> 15 mins </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    style = {styles.button}>
-                    <Text style = {styles.btnText}> 20 min or more </Text>
+                    style = {styles.buttonMulti}>
+                    <Text style = {styles.btnText}> {'>'} 20 mins </Text>
                 </TouchableOpacity>
             </View>
 

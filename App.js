@@ -32,7 +32,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName = "Welcome">
+      <Stack.Navigator initialRouteName = "Water Question 1">
         <Stack.Screen name = "Welcome" component = {WelcomePage} options={{headerShown: false}}/>
         <Stack.Screen name = "Water Question 1" component = {WaterQ1} options={{headerShown: false}}/>
         <Stack.Screen name = "Water Question 2" component = {WaterQ2} options={{headerShown: false}} />
