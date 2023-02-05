@@ -13,17 +13,17 @@ const styles = StyleSheet.create({
     },
 
     quesContainer: {
-        flex: 0.5,
+        flex: 1,
         justifyContent: 'flex-start',
         alignItems: 'center',
         marginTop: 50,
     },
 
     inputContainer: {
-        flex: 1.5,
+        flex: 2,
         flexDirection: 'row',
         justifyContent: 'center',
-        alignItems: 'flex-start',
+        alignItems: 'center',
     },
 
     btnText: {
@@ -40,6 +40,25 @@ const styles = StyleSheet.create({
         height: 50,
         marginRight: 40,
         marginLeft: 40,
+    },
+    nextBtn: {
+        borderRadius: 50, 
+        backgroundColor: '#2C7EF1',
+        width: 50,
+        height: 50,
+    },
+    nextContainer: {
+        flex: 3,
+        alignItems: 'flex-end',
+        marginRight: 20,
+    },
+
+    nextBtnText: {
+        marginLeft: 9,
+        marginTop: 10,
+        fontSize: 25,
+        fontWeight: 'bold',
+        color: 'white',
     }
 });
 
@@ -61,6 +80,14 @@ export default function WaterQ1 ({navigation}) {
                     style = {styles.button}>
                     <Text style = {styles.btnText}> No </Text>
                 </TouchableOpacity>
+            </View>
+
+            <View style = {styles.nextContainer}>
+                <TouchableOpacity 
+                    style = {styles.nextBtn}
+                    onPress= {() => navigation.navigate("WaterQ2")}>
+                        <Text style = {styles.nextBtnText}> {'->'} </Text>
+                    </TouchableOpacity>
             </View>
         </View>
     )
