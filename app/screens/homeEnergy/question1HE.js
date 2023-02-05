@@ -14,17 +14,17 @@ export default function HomeEnergyQ1 ({navigation}) {
             <View style = {styles.inputMultiContainer}>
                 <TouchableOpacity 
                     style = {styles.buttonMulti}>
-                    <Text style = {styles.btnText}> Yes, Many Loads </Text>
+                    <Text style = {styles.btnText}> Many Loads </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
                     style = {styles.buttonMulti}>
-                    <Text style = {styles.btnText}> Yes, 1 Full Load </Text>
+                    <Text style = {styles.btnText}> 1 Full Load </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
                     style = {styles.buttonMulti}>
-                    <Text style = {styles.btnText}> Yes, 1 Not Full Load </Text>
+                    <Text style = {styles.btnText}> Partial Load </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 

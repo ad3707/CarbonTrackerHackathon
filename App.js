@@ -3,7 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import WelcomePage from './app/screens/welcome.js';
 import SignUpPage from './app/screens/signup.js';
 import ProfilePage from './app/screens/profile.js';
-import StartTrackingPage from './app/screens/startTrackingPage.js';
+import StartTrackingPage from './app/screens/startTrackingPage';
+import DisplayPage from './app/screens/Display.js';
+
 import WaterQ1 from './app/screens/waterQuestions/question1.js';
 import WaterQ2 from './app/screens/waterQuestions/question2.js';
 import WaterQ3 from './app/screens/waterQuestions/question3.js';
@@ -32,7 +34,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName = "StartTracking">
+      <Stack.Navigator initialRouteName = "Welcome">
         <Stack.Screen name = "Welcome" component = {WelcomePage} options={{headerShown: false}}/>
         <Stack.Screen name = "Water Question 1" component = {WaterQ1} options={{headerShown: false}}/>
         <Stack.Screen name = "Water Question 2" component = {WaterQ2} options={{headerShown: false}} />
@@ -53,6 +55,8 @@ export default function App() {
         <Stack.Screen name = "SignUp" component = {SignUpPage} options={{headerShown: false}} />
         <Stack.Screen name = "Profile" component = {ProfilePage} options={{headerShown: false}}/>
         <Stack.Screen name = "StartTracking" component = {StartTrackingPage} options={{headerShown: false}}/>
+        <Stack.Screen name = "DisplayPage" component = {DisplayPage} options={{headerShown: false}}/>
+
       </Stack.Navigator>
     </NavigationContainer>
   );

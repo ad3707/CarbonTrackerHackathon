@@ -8,15 +8,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#3489FE',
     },
 
-    titleContainer: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-
     infoContainer: {
         flex: 2,
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         alignItems: 'center',
     },
 
@@ -26,16 +20,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
-    title: {
-        color: '#F9912C',
-        fontSize: 50,
-        textAlign: 'center',
-        fontFamily: 'Avenir-Roman',
-        fontWeight: 'bold',
-    },
-
-    emailText: {
-        fontSize: 25,
+    displayText: {
+        fontSize: 40,
         color: 'black',
         fontFamily: 'Avenir-Roman',
     },
@@ -55,20 +41,15 @@ const styles = StyleSheet.create({
         marginRight: 40,
         marginLeft: 40,
     },
-
 });
 
-export default function ProfilePage ({navigation}) {
-    const [carbon , setCarbon] = React.useState(0);
+export default function ProfilePage ({route, navigation}) {
+    const [carbon , setCarbon] = React.useState(route.params.paramKey);
 
     return (
         <View style = {styles.container}>
-            <View style = {styles.titleContainer}>
-                <Text style = {styles.title}>Profile</Text>
-            </View>
             <View style = {styles.infoContainer}>
-                <Text style = {styles.emailText}>Email: {auth.currentUser?.email} </Text>
-                {/* <Text style = {styles.emailText}> Carbon Points: {carbon} </Text> */}
+                <Text style = {styles.displayText}> Carbon Points: {carbon} </Text>
             </View>
 
             <View style = {styles.startContainer}>
@@ -76,7 +57,7 @@ export default function ProfilePage ({navigation}) {
                     style = {styles.button}
                     onPress= {() => navigation.navigate("StartTracking",{
                         paramKey: carbon})}>
-                        <Text style = {styles.btnText}> Start Tracking </Text>
+                        <Text style = {styles.btnText}> Track More </Text>
                     </TouchableOpacity>
             </View>
         </View>
