@@ -11,24 +11,24 @@ export default function HomeEnergyQ2 ({navigation}) {
                 <Text style = {styles.quesText}> Did you use your washing machine today? </Text>
             </View>
 
-            <View style = {styles.inputContainer}>
+            <View style = {styles.inputMultiContainer}>
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Yes, Many Loads </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Yes, 1 Full Load </Text>
                 </TouchableOpacity>
                 
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> Yes, 1 Not Full Load </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
-                    style = {styles.button}>
+                    style = {styles.buttonMulti}>
                     <Text style = {styles.btnText}> No </Text>
                 </TouchableOpacity>
             </View>

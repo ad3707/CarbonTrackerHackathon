@@ -26,6 +26,13 @@ module.exports = StyleSheet.create({
         alignItems: 'center',
     },
 
+    inputMultiContainer: {
+        flex: 2,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
     btnText: {
         fontSize: 25,
         color: 'white',
@@ -40,6 +47,18 @@ module.exports = StyleSheet.create({
         height: 50,
         marginRight: 40,
         marginLeft: 40,
+    },
+
+    buttonMulti: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+        backgroundColor: '#2377B9',
+        width: 220,
+        height: 50,
+        marginRight: 40,
+        marginLeft: 40,
+        marginTop: 25,
     },
     nextBtn: {
         borderRadius: 50, 
