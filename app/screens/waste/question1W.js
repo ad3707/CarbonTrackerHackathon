@@ -43,12 +43,12 @@ const styles = StyleSheet.create({
     }
 });
 
-export default function WaterQ1 ({navigation}) {
+export default function WasteQ1 ({navigation}) {
     const [text, onChangeText] = React.useState('Enter')
     return (
         <View style = {styles.container}>
             <View style = {styles.quesContainer}>
-                <Text style = {styles.quesText}> How long did you shower today? </Text>
+                <Text style = {styles.quesText}> Did you throw out any leftover food? </Text>
             </View>
 
             <View style = {styles.inputContainer}>

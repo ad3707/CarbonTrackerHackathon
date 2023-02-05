@@ -7,6 +7,11 @@ import WaterQ2 from './app/screens/waterQuestions/question2.js'
 import WaterQ3 from './app/screens/waterQuestions/question3.js'
 import WaterQ4 from './app/screens/waterQuestions/question4.js'
 
+import WasteQ1 from './app/screens/waste/question1W.js'
+import WasteQ2 from './app/screens/waste/question2W.js'
+import WasteQ3 from './app/screens/waste/question3W.js'
+import WasteQ4 from './app/screens/waste/question4W.js'
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -21,6 +26,10 @@ export default function App() {
         <Stack.Screen name = "WaterQ2" component = {WaterQ2} />
         <Stack.Screen name = "WaterQ3" component = {WaterQ3} />
         <Stack.Screen name = "WaterQ4" component = {WaterQ4} />
+        <Stack.Screen name = "WasteQ1" component = {WasteQ1} />
+        <Stack.Screen name = "WasteQ2" component = {WasteQ2} />
+        <Stack.Screen name = "WasteQ3" component = {WasteQ3} />
+        <Stack.Screen name = "WasteQ4" component = {WasteQ4} />
       </Stack.Navigator>
     </NavigationContainer>
   );
