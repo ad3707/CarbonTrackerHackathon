@@ -49,8 +49,10 @@ module.exports = StyleSheet.create({
         backgroundColor: '#F9912C',
         width: 100,
         height: 50,
-        marginRight: 40,
-        marginLeft: 40,
+        marginLeft: 'auto',
+        marginTop: 'auto',
+        marginRight: 'auto',
+        marginBottom: 'auto',
     },
 
     buttonMulti: {
@@ -78,8 +80,10 @@ module.exports = StyleSheet.create({
     },
 
     nextBtnText: {
-        marginLeft: 9,
-        marginTop: 9,
+        marginLeft: 'auto',
+        marginTop: 'auto',
+        marginRight: 'auto',
+        marginBottom: 'auto',
         fontSize: 28,
         fontWeight: 'bold',
         color: 'white',

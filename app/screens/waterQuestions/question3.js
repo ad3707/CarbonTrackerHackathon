@@ -30,7 +30,7 @@ export default function WaterQ3 ({route,navigation}) {
                     style = {styles.nextBtn}
                     onPress= {() => navigation.navigate("Water Question 4",{
                         paramKey: carbon})}>
-                        <Text style = {styles.nextBtnText}> {'>'} </Text>
+                        <Text style = {styles.nextBtnText}> {'Next'} </Text>
                     </TouchableOpacity>
             </View>
 

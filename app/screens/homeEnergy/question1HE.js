@@ -42,7 +42,7 @@ export default function HomeEnergyQ1 ({route,navigation}) {
                     style = {styles.nextBtn}
                     onPress= {() => navigation.navigate("Home Energy Question 2",{
                       paramKey: carbon})}>
-                        <Text style = {styles.nextBtnText}> {'>'} </Text>
+                        <Text style = {styles.nextBtnText}> {'Next'} </Text>
                     </TouchableOpacity>
             </View>
 

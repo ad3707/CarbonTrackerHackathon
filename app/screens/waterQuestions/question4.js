@@ -31,7 +31,7 @@ export default function WaterQ4 ({route, navigation}) {
                     style = {styles.nextBtn}
                     onPress= {() => navigation.navigate("DisplayPage",{
                         paramKey: carbon})}>
-                        <Text style = {styles.nextBtnText}> {'>'} </Text>
+                        <Text style = {styles.nextBtnText}> {'Next'} </Text>
                     </TouchableOpacity>
             </View>
         </View>
