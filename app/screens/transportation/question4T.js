@@ -30,7 +30,7 @@ export default function TransportationQ4 ({route,navigation}) {
                     style = {styles.nextBtn}
                     onPress= {() => navigation.navigate("DisplayPage",{
                         paramKey: carbon})}>
-                        <Text style = {styles.nextBtnText}> {'->'} </Text>
+                        <Text style = {styles.nextBtnText}> {'>'} </Text>
                     </TouchableOpacity>
             </View>
         </View>

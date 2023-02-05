@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     },
 
     displayText: {
-        fontSize: 40,
+        fontSize: 38,
         color: 'black',
         fontFamily: 'Avenir-Roman',
     },
@@ -49,7 +49,7 @@ export default function ProfilePage ({route, navigation}) {
     return (
         <View style = {styles.container}>
             <View style = {styles.infoContainer}>
-                <Text style = {styles.displayText}> Carbon Points: {carbon} </Text>
+                <Text style = {styles.displayText}> Carbon Emissions: {carbon} </Text>
             </View>
 
             <View style = {styles.startContainer}>

@@ -55,7 +55,7 @@ export default function StartTrackingPage ({route, navigation}) {
                 <TouchableOpacity 
                     style = {styles.nextBtn}
                     onPress= {() => navigation.navigate("Profile")}>
-                        <Text style = {styles.nextBtnText}> {'<-'} </Text>
+                        <Text style = {styles.nextBtnText}> {'<'} </Text>
                     </TouchableOpacity>
             </View>
 

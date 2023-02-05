@@ -78,7 +78,7 @@ module.exports = StyleSheet.create({
     },
 
     nextBtnText: {
-        marginLeft: 4,
+        marginLeft: 9,
         marginTop: 9,
         fontSize: 28,
         fontWeight: 'bold',

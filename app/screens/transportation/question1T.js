@@ -43,7 +43,7 @@ export default function TransportationQ1 ({route,navigation}) {
                     style = {styles.nextBtn}
                     onPress= {() => navigation.navigate("Transportation Question 2",{
                         paramKey: carbon})}>
-                        <Text style = {styles.nextBtnText}> {'->'} </Text>
+                        <Text style = {styles.nextBtnText}> {'>'} </Text>
                     </TouchableOpacity>
             </View>
         </View>
