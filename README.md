@@ -4,8 +4,11 @@ Team Members:  Isabel Abonitalla, Aditi Dam, Leesel Fraser, Danunetta Jones
 
 
 Instructions:
-Clone Project. 
-npm install. 
-npm install @react-navigation/native. 
-npm install @react-navigation/native-stack. 
+Clone Project
+npm install
+
+npm install @react-navigation/native
+
+npm install @react-navigation/native-stack
+
 npm start or expo start. 
