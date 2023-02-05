@@ -64,7 +64,7 @@ export default function ProfilePage ({route, navigation}) {
         hasXAxisBackgroundLines: false,
         xAxisLabelStyle: {
           position: 'left',
-          prefix: 'lbs '
+          suffix: ' lbs'
         }
       };
       
