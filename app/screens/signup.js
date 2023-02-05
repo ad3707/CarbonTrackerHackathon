@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
+import { auth } from '../../firebase';
 
 const styles = StyleSheet.create({
     container: {
@@ -49,21 +50,68 @@ const styles = StyleSheet.create({
     },
 });
 
+
+
 export default function SignUpPage ({navigation}) {
+    const [email, setEmail] = React.useState('')
+    const [password, setPassword] = React.useState('')
+    
+    React.useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged(user => {
+            if (user) {
+                navigation.navigate('Profile')
+            }
+        })
+
+        return unsubscribe
+    },[])
+        
+    const handleSignUp = () => {
+        auth
+        .createUserWithEmailAndPassword(email,password)
+        .then(userCredential => {
+            const user = userCredential.user;
+        })
+        .catch(error => alert(error.message))
+    }
+
+    const handleLogin = () => {
+        auth
+        .signInWithEmailAndPassword(email,password)
+        .then(userCredential => {
+            const user = userCredential.user;
+        })
+        .catch(error => alert(error.message))
+    }
+    
     return (
         <View style = {styles.container}>
             <View style = {styles.inputContainer}>
-                <TextInput style = {styles.inputText}> Email </TextInput>
-                <TextInput style = {styles.inputText}> Password </TextInput>
+                <TextInput 
+                    style = {styles.inputText} 
+                    placeholder ='Email'
+                    value = {email}
+                    onChangeText = {text => setEmail(text)}>
+                </TextInput>
+
+                <TextInput 
+                    style = {styles.inputText} 
+                    secureTextEntry 
+                    placeholder='Password'
+                    value = {password}
+                    onChangeText = {text => setPassword(text)}>  
+                </TextInput>
             </View>
 
             <View style = {styles.btnContainer}>
                 <TouchableOpacity 
+                        onPress = {handleSignUp}
                         style = {styles.button}>
                         <Text style = {styles.btnText}> Sign Up </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity 
+                        onPress = {handleLogin}
                         style = {styles.button}>
                         <Text style = {styles.btnText}> Login </Text>
                 </TouchableOpacity>

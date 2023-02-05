@@ -1,33 +1,37 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
+import { auth } from '../../firebase';
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'black',
+        backgroundColor: '#3489FE',
     },
 
     titleContainer: {
-        flex: 3,
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
     },
 
-    blurbContainer: {
+    infoContainer: {
         flex: 2,
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
     },
 
     title: {
-        color: '#97C23C',
-        fontSize: 100,
+        color: '#F9912C',
+        fontSize: 50,
         textAlign: 'center',
+        fontFamily: 'Avenir-Roman',
+        fontWeight: 'bold',
     },
 
-    blurbText: {
-        fontSize: 30,
-        color: 'white',
+    emailText: {
+        fontSize: 25,
+        color: 'black',
+        fontFamily: 'Avenir-Roman',
     }
 });
 
@@ -37,9 +41,8 @@ export default function ProfilePage ({navigation}) {
             <View style = {styles.titleContainer}>
                 <Text style = {styles.title}>Profile</Text>
             </View>
-            <View style = {styles.blurbContainer}>
-                <Text style = {styles.blurbText}> Email: user@email.com </Text>
-                <Text style = {styles.blurbText}> Username: bestuserever </Text>
+            <View style = {styles.infoContainer}>
+                <Text style = {styles.emailText}>Email: {auth.currentUser?.email} </Text>
             </View>
         </View>
     )
